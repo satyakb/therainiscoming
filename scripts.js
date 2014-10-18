@@ -41,7 +41,7 @@ module.exports = function() {
       request(weatherUrl, function(err, resp, body) {
         console.log(err, body);
         var status = JSON.parse(body).list[1].weather[0].main.toLowerCase();
-        if (status) {
+        if (status == 'rain') {
           self.sendYo(user.username);
         }
       })
