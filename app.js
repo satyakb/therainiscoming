@@ -13,6 +13,8 @@ var User = mongoose.model('User');
 var ObjectId = mongoose.Types.ObjectId;
 var scripts = require('./scripts')();
 
+mongoose.connect('mongodb://localhost/yo-rain');
+
 var routes = require('./routes/index');
 var apps = require('./routes/apps');
 
@@ -34,7 +36,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components',  express.static(path.join(__dirname, '/bower_components')));
 
 app.use('/', routes);
-app.use('/apps', apps);
 
 // Start scheduler for weather status
 scripts.startScheduler();
