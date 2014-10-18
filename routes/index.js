@@ -4,16 +4,16 @@ var mongoose = require('mongoose');
 var User = mongoose.model('User');
 var ObjectId = mongoose.Types.ObjectId;
 var request = require('request');
-var scripts = require('../../scripts')();
+var scripts = require('../scripts')();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  yoParams.username = 'SATYA';
-  console.log(yoParams);
-  request.post({url:yoUrl, formData: yoParams}, function(err, httpResponse, body) {
-    console.log('err: ', err);
-    console.log('body ', body);
-  });
+  // yoParams.username = 'SATYA';
+  // console.log(yoParams);
+  // request.post({url:yoUrl, formData: yoParams}, function(err, httpResponse, body) {
+  //   console.log('err: ', err);
+  //   console.log('body ', body);
+  // });
   res.render('index', { title: 'Express' });
 });
 
