@@ -8,21 +8,10 @@ var scripts = require('../scripts')();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  // yoParams.username = 'SATYA';
-  // console.log(yoParams);
-  // request.post({url:yoUrl, formData: yoParams}, function(err, httpResponse, body) {
-  //   console.log('err: ', err);
-  //   console.log('body ', body);
-  // });
   res.render('index', { title: 'Express' });
 });
 
 router.get('/test', function(req, res) {
-  // var start = Date.now();
-  // console.log(start);
-  // scripts.getAllWeather();
-  // var end = Date.now();
-  // console.log('elapsed: ', (end - start) / 1000);
   res.send(200);
 })
 
