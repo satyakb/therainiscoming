@@ -8,7 +8,7 @@ module.exports = function() {
   return new function() {
     var self = this;
     var rule = new schedule.RecurrenceRule();
-    rule.hour = 18;
+    rule.hour = 21;
     rule.minute = 0;
 
     var yoUrl = 'http://api.justyo.co/yo/';
