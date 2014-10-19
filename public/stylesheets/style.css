@@ -1,1 +1,1 @@
-body{padding:50px;font:14px "Lucida Grande",Helvetica,Arial,sans-serif}a{color:#00B7FF}
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');body{padding:50px;font:14px "Lucida Grande",Helvetica,Arial,sans-serif;background:#9B59B6;font-family:'Montserrat',sans-serif;font-weight:bold;color:white;text-align:center}.content{position:absolute;margin:0 auto;left:0;right:0}.content h1{font-size:8em}.content p{font-size:1.5em;width:50%;margin:125px auto 0}a{color:#00B7FF}

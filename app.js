@@ -16,7 +16,6 @@ var scripts = require('./scripts')();
 mongoose.connect('mongodb://localhost/yo-rain');
 
 var routes = require('./routes/index');
-var apps = require('./routes/apps');
 
 var app = express();
 

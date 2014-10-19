@@ -8,7 +8,7 @@ var scripts = require('../scripts')();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'THERAINISCOMING' });
 });
 
 router.get('/test', function(req, res) {
